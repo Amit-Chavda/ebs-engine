@@ -1,0 +1,20 @@
+server.port: 8085
+
+spring:
+  application:
+    name: ebs-backend
+
+  flyway:
+    enabled: true
+  jmx:
+    enabled: false
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/ebs?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: Pass123$
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
